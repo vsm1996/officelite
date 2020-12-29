@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --color-blue: #5175ff;
+  --color-light-blue: #829cff;
+
+  --color-dark-grey: #25293a;
+  --color-warm-grey: #333950;
+  --color-light-grey: #747b95;
+
+  --color-pink: #f05b5b;
+}

@@ -1,0 +1,28 @@
+.footer-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-warm-grey);
+  color: #fff;
+
+  width: 6.25rem;
+  height: 8rem;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+
+.footer-card__time {
+  color: #fff;
+  font-size: 3.5rem;
+  line-height: 3rem;
+}
+
+.footer-card__metric {
+  color: var(--color-light-grey);
+  font-size: 1rem;
+  line-height: 1.75rem;
+}

@@ -1,0 +1,49 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49%;
+  height: 24.25rem;
+}
+
+.header__content-heading {
+  color: var(--color-warm-grey);
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+.header__content-paragraph {
+  color: var(--color-light-grey);
+  font-weight: 400;
+  font-size: 1.22rem;
+  line-height: 1.75rem;
+}
+
+.header__content-btn {
+  cursor: pointer;
+  background-color: var(--color-blue);
+  color: #fff;
+  border: none;
+  width: 10rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  border-radius: 1.75rem;
+}
+
+.header__content-btn:hover {
+  background-color: var(--color-light-blue);
+}
+
+.header__charts {
+  width: 45%;
+}

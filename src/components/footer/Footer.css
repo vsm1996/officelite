@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-end;
+  background: url("../../assets/home/bg-pattern-footer.svg") no-repeat;
+  background-position: -48rem -37rem;
+  background-color: #25293a;
+
+  height: 37rem;
+  margin-top: -20rem;
+  padding: 4rem 6rem;
+}
+
+.footer__content h3 {
+  color: var(--color-blue);
+  letter-spacing: 5px;
+}
+
+.footer__content span {
+  color: #fff;
+}
+
+.footer__content-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.footer-btn {
+  cursor: pointer;
+  background-color: var(--color-blue);
+  color: #fff;
+  border: none;
+  width: 10rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  border-radius: 1.75rem;
+}
+
+.footer-btn:hover {
+  background-color: var(--color-light-blue);
+}

@@ -1,0 +1,71 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  width: 22rem;
+  height: 31.75rem;
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+
+.card1-bg {
+  background-color: #fff;
+  color: var(--color-warm-grey);
+}
+
+.card2-bg {
+  background: url(../../../assets/home/bg-pattern-pricing.svg) no-repeat;
+  background-position: -16.35rem -16rem;
+  background-color: var(--color-blue);
+  color: #fff;
+}
+
+.card__price {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+
+.card__bonus > * {
+  margin-bottom: 1rem;
+}
+
+.card__bonus-grey {
+  color: var(--color-light-grey);
+}
+
+.card__bonus-white {
+  color: #fff;
+}
+
+.card-btn {
+  cursor: pointer;
+  width: 10rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  border: none;
+  border-radius: 1.75rem;
+}
+
+.card-btn1 {
+  background-color: rgba(81, 117, 255, 0.15);
+  color: var(--color-blue);
+}
+
+.card-btn1:hover {
+  background-color: rgba(81, 117, 255, 0.25);
+}
+
+.card-btn2 {
+  background-color: #fff;
+  color: var(--color-blue);
+}
+
+.card-btn2:hover {
+  color: var(--color-light-blue);
+}

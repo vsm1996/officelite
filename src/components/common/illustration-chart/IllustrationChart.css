@@ -1,0 +1,11 @@
+.illu-chart__container {
+  display: flex;
+  justify-content: flex-end;
+  width: 45%;
+  margin-left: 5.9rem;
+}
+
+.illu-chart {
+  width: 100%;
+  height: auto;
+}

@@ -1,6 +1,9 @@
+.logo-container {
+  margin-bottom: 9rem;
+}
+
 .header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 2rem 0;
 }
@@ -8,9 +11,8 @@
 .header__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 49%;
-  height: 24.25rem;
+  /* justify-content: space-around; */
+  width: 36rem;
 }
 
 .header__content-heading {
@@ -25,6 +27,7 @@
   font-weight: 400;
   font-size: 1.22rem;
   line-height: 1.75rem;
+  margin: 2rem 0;
 }
 
 .header__content-btn {
@@ -46,4 +49,54 @@
 
 .header__charts {
   width: 45%;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-container {
+    text-align: initial;
+    margin-bottom: 5rem;
+  }
+
+  .header__content-heading {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .header__content-paragraph {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .logo-container {
+    text-align: center;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .header__container {
+    flex-direction: column-reverse;
+  }
+
+  .header__content {
+    text-align: center;
+    width: initial;
+  }
+
+  .header__content-heading {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+
+  .header__content-paragraph {
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  .header__content-btn {
+    align-self: center;
+  }
 }

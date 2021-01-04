@@ -2,7 +2,7 @@ import React from 'react'
 import FooterCard from '../common/footer-card/FooterCard';
 
 import './Footer.css'
-const Footer = () => {
+const Footer = ({ homepage }) => {
   const cards = [
     {
       time: "47",
@@ -26,7 +26,7 @@ const Footer = () => {
       <div className="footer__content">
         <h3> <span>COMING</span> 4 NOV 2020</h3>
         <div className="footer__content-cards">
-          {cards.map((card, index) => <FooterCard key={index} card={card} />)}
+          {cards.map((card, index) => <FooterCard key={index} card={card} homepage={homepage} />)}
         </div>
       </div>
       <button className="footer-btn">Get Started</button>

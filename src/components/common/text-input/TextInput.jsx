@@ -2,11 +2,13 @@ import React from 'react'
 
 import './TextInput.css'
 
-const TextInput = () => {
+const TextInput = ({ name, handleChange, ...rest }) => {
   return (
-    <div>
-
-    </div>
+    <input
+      {...rest}
+      className="input"
+      onChange={handleChange}
+    />
   )
 }
 

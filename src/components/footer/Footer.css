@@ -43,3 +43,30 @@
 .footer-btn:hover {
   background-color: var(--color-light-blue);
 }
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-position: -40rem -11rem;
+
+    height: 61.625rem;
+    margin-top: -35rem;
+  }
+
+  .footer__content {
+    text-align: center;
+  }
+
+  .footer-btn {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .footer {
+    height: 73rem;
+    margin-top: -50rem;
+  }
+}

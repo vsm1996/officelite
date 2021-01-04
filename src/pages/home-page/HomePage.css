@@ -1,3 +1,19 @@
+.homepage {
+  background: url(../../assets/home/bg-pattern-header.svg) no-repeat;
+  background-color: #f2f2f2;
+  background-position: 40rem -32rem;
+}
+
 .homepage__container {
   padding: 3rem 6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .homepage {
+    background-position: 19rem -33.25rem;
+  }
+
+  .homepage__container {
+    padding: 3rem 3rem;
+  }
 }

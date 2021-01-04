@@ -1,0 +1,17 @@
+.select {
+  border: none;
+  appearance: none;
+  opacity: 0.5;
+  color: var(--color-light-grey);
+  border-bottom: 1px solid var(--color-light-grey);
+  width: 60%;
+  padding-bottom: 1rem;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.select__option {
+  background-color: white;
+}

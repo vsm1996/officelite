@@ -1,15 +1,15 @@
 import React from 'react'
-import logo from '../../assets/shared/logo.svg'
 import IllustrationChart from '../common/illustration-chart/IllustrationChart'
+import Logo from '../common/logo/Logo'
 
 import './Header.css'
 
-const Header = () => {
+const Header = ({ headerContent }) => {
   return (
     <div className="header">
 
-      <div className="logo-container">
-        <img src={logo} alt="officelite logo" className="logo" />
+      <div className={headerContent.homepage ? "" : 'logo-container'}>
+        <Logo />
       </div>
 
       <div className="header__container">
@@ -17,16 +17,15 @@ const Header = () => {
         <div className="header__content">
 
           <h1 className="header__content-heading">
-            A simple solution to complex tasks is coming soon
-           </h1>
+            {headerContent.heading}
+          </h1>
           <p className="header__content-paragraph">
-            Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new
-            collaboration platform built with an intuitive interface to improve productivity.
+            {headerContent.paragraph}
           </p>
-          <button className="header__content-btn">Get Started</button>
+          {headerContent.homepage ? (<button className="header__content-btn">Get Started</button>) : null}
 
         </div>
-        <IllustrationChart />
+        {headerContent.homepage ? (<IllustrationChart />) : null}
       </div>
     </div>
   );

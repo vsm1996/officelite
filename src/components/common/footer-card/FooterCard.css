@@ -4,25 +4,51 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-warm-grey);
-  color: #fff;
 
   width: 6.25rem;
   height: 8rem;
   padding: 2rem;
   border-radius: 0.8rem;
-  margin-right: 1rem;
   font-weight: 700;
 }
 
+.footer-card:not(:last-child) {
+  margin-right: 1rem;
+}
+
 .footer-card__time {
-  color: #fff;
   font-size: 3.5rem;
   line-height: 3rem;
 }
-
 .footer-card__metric {
   color: var(--color-light-grey);
   font-size: 1rem;
   line-height: 1.75rem;
+}
+
+.card-type-homepage {
+  background-color: var(--color-warm-grey);
+  color: #fff;
+}
+
+.card-type-signup {
+  background-color: rgba(81, 117, 255, 0.1);
+  color: var(--color-blue);
+}
+
+@media only screen and (max-width: 640px) {
+  .footer-card {
+    width: 4.5rem;
+    height: 5.75rem;
+  }
+
+  .footer-card__time {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .footer-card__metric {
+    font-size: 12px;
+    line-height: 28px;
+  }
 }

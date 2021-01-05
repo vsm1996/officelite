@@ -26,6 +26,6 @@
 
 @media only screen and (max-width: 640px) {
   .homepage {
-    background-position: 20rem -27rem;
+    background-position: -20rem -27rem;
   }
 }

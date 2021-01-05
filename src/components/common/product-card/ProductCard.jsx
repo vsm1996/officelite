@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './ProductCard.css'
 
@@ -20,7 +21,7 @@ const ProductCard = ({ index, card }) => {
         <p>{card.bonus2}</p>
       </span>
 
-      <button className={index === 1 ? 'card-btn card-btn2' : 'card-btn card-btn1'}>Try for Free</button>
+      <Link to="/sign-up" className={index === 1 ? 'card-btn card-btn2' : 'card-btn card-btn1'}>Try for Free</Link>
     </div>);
 }
 

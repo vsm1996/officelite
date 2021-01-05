@@ -1,5 +1,12 @@
 .signup {
   padding: 3rem 6rem;
+  background: url(../../assets/sign-up/bg-pattern-side.svg) no-repeat,
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 71.5%,
+      var(--color-dark-grey) 20%
+    );
+  background-position: 0 -37rem;
 }
 
 .signup__container {
@@ -31,6 +38,15 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .signup {
+    background: url(../../assets/sign-up/bg-pattern-side.svg) no-repeat,
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 51%,
+        var(--color-dark-grey) 41%
+      );
+  }
+
   .signup__container {
     flex-direction: column;
   }
@@ -48,8 +64,20 @@
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .signup {
+    padding: 2rem;
+  }
+}
+
 @media only screen and (max-width: 640px) {
   .signup {
     padding: 2rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .signup-timer__content {
+    width: initial;
   }
 }

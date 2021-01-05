@@ -29,6 +29,8 @@
 
 .footer-btn {
   cursor: pointer;
+  text-decoration: none;
+  text-align: center;
   background-color: var(--color-blue);
   color: #fff;
   border: none;

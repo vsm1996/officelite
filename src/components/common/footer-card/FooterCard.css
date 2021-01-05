@@ -36,6 +36,22 @@
   color: var(--color-blue);
 }
 
+@media only screen and (max-width: 1024px) {
+  /* .footer-card {
+    width: 4.25rem;
+    height: 6rem;
+  } */
+
+  .footer-card:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .footer-card__time {
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+}
+
 @media only screen and (max-width: 640px) {
   .footer-card {
     width: 4.5rem;
@@ -50,5 +66,12 @@
   .footer-card__metric {
     font-size: 12px;
     line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .footer-card {
+    width: 3.5rem;
+    height: 4.75rem;
   }
 }

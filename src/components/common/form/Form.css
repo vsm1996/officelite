@@ -28,3 +28,9 @@
 .form-btn:hover {
   background-color: var(--color-light-blue);
 }
+
+@media only screen and (max-width: 480px) {
+  .form {
+    width: 20rem;
+  }
+}

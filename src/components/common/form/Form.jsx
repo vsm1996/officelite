@@ -21,7 +21,7 @@ export class Form extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    console.log('clicking')
+    this.setState({ name: '', email: '', tier: '', number: '', company: '' })
   }
 
   render() {
@@ -30,28 +30,32 @@ export class Form extends Component {
       <form onSubmit={this.handleSubmit} className="form">
         <TextInput
           handleChange={this.handleChange}
-          name={name}
+          name="name"
+          type="text"
           value={name}
           placeholder="Name" />
         <TextInput
           handleChange={this.handleChange}
-          name={email}
+          name="email"
+          type="email"
           value={email}
           placeholder="Email Address" />
 
         <SelectInput
           handleChange={this.handleChange}
-          name={tier}
+          name="tier"
           value={tier} />
 
         <TextInput
           handleChange={this.handleChange}
-          name={number}
+          name="number"
+          type="text"
           value={number}
           placeholder="Phone Number" />
         <TextInput
           handleChange={this.handleChange}
-          name={company}
+          name="company"
+          type="text"
           value={company}
           placeholder="Company" />
         <button className="form-btn">Get on the list</button>

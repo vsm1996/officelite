@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import FooterCard from '../common/footer-card/FooterCard';
 
 import './Footer.css'
@@ -29,7 +30,7 @@ const Footer = ({ homepage }) => {
           {cards.map((card, index) => <FooterCard key={index} card={card} homepage={homepage} />)}
         </div>
       </div>
-      <button className="footer-btn">Get Started</button>
+      <Link to='/sign-up' className="footer-btn">Get Started</Link>
     </div>);
 }
 

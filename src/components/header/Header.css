@@ -32,6 +32,8 @@
 
 .header__content-btn {
   cursor: pointer;
+  text-decoration: none;
+  text-align: center;
   background-color: var(--color-blue);
   color: #fff;
   border: none;
@@ -49,6 +51,12 @@
 
 .header__charts {
   width: 45%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__content {
+    width: 24rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {

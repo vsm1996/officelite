@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import IllustrationChart from '../common/illustration-chart/IllustrationChart'
 import Logo from '../common/logo/Logo'
 
@@ -22,7 +23,7 @@ const Header = ({ headerContent }) => {
           <p className="header__content-paragraph">
             {headerContent.paragraph}
           </p>
-          {headerContent.homepage ? (<button className="header__content-btn">Get Started</button>) : null}
+          {headerContent.homepage ? (<Link className="header__content-btn" to='/sign-up'>Get Started</Link>) : null}
 
         </div>
         {headerContent.homepage ? (<IllustrationChart />) : null}

@@ -23,3 +23,9 @@
     padding: 3rem 3rem;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .homepage {
+    background-position: 19rem -38rem;
+  }
+}

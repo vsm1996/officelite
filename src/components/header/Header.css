@@ -59,7 +59,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .logo-container {
     text-align: initial;
     margin-bottom: 5rem;

@@ -21,6 +21,7 @@
   background-position: -16.35rem -16rem;
   background-color: var(--color-blue);
   color: #fff;
+  margin: 0 1.5rem;
 }
 
 .card__price {
@@ -72,13 +73,13 @@
   color: var(--color-light-blue);
 }
 
-@media only screen and (max-width: 1025px) {
+/* @media only screen and (max-width: 1025px) {
   .card2-bg {
     margin: 0 1.5rem;
   }
-}
+} */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .card {
     width: 42rem;
     height: 19.75rem;
